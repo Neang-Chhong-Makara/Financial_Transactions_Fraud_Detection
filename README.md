@@ -1,11 +1,7 @@
----
-
 ### 🛠 Step-by-Step Deployment Guide for Financial-Transactions-Fraud-Detection-Project on local WSL
 👉 To deploy the *Financial_Transactions_Fraud_Detection* project on a local WSL (Windows Subsystem for Linux) environment, we will clone the GitHub repository and use **Docker Compose** to build the image and run the container directly within WSL. The key steps are: **install Docker and Docker Compose in WSL, clone the repository, and run the container with the appropriate port mappings for API and UI access.**
 
 👉 Since the repository is already Docker-ready, the main task is simply **building and running the container inside the local WSL environment using Docker Compose.**
-
----
 
 #### 1. ✅ Prepare WSL Environment
 - Ensure **WSL2** is installed with a Linux distribution (Ubuntu recommended).  
@@ -51,18 +47,14 @@ cd Financial_Transactions_Fraud_Detection
   ```bash
   docker-compose logs -f
   ```
-- This confirms the Streamlit, and MLflow services are running correctly.
+- This confirms that the Streamlit and MLflow services are running correctly.
 
 #### 6. 🌐 Access the Application
 - Open a browser and access:
   - Streamlit UI → `http://localhost:8501`  
   - MLflow UI → `http://localhost:5001`  
 
----
-
 ### 🔑 Key Notes
 - **Consistency:** Docker Compose ensures the same environment across development and production.  
 - **Scalability:** Containers can later be deployed to Kubernetes or cloud platforms.  
-- **Auditability:** MLflow and artifact logging inside Docker make fraud detection experiments reproducible.  
-
----
+- **Auditability:** MLflow and artifact logging inside Docker make fraud detection experiments reproducible. 
