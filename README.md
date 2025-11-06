@@ -1,74 +1,68 @@
-### 🛠 Step-by-Step Deployment Guide for Financial-Transactions-Fraud-Detection-Project on WSL
-👉 We can deploy our *Financial_Transactions_Fraud_Detection* project on a local WSL (Windows Subsystem for Linux) machine by cloning the GitHub repository, building the Docker image, and running the container within WSL. The key steps are: **install Docker in WSL, clone the repo, build the image, and run the container with mapped ports for API access.**
+---
 
-👉 Since our repository is already structured for Docker, the main effort is just **building and running the container inside local WSL**. 
+### 🛠 Step-by-Step Deployment Guide for Financial-Transactions-Fraud-Detection-Project on local WSL
+👉 To deploy the *Financial_Transactions_Fraud_Detection* project on a local WSL (Windows Subsystem for Linux) environment, we will clone the GitHub repository and use **Docker Compose** to build the image and run the container directly within WSL. The key steps are: **install Docker and Docker Compose in WSL, clone the repository, and run the container with the appropriate port mappings for API and UI access.**
+
+👉 Since the repository is already Docker-ready, the main task is simply **building and running the container inside the local WSL environment using Docker Compose.**
 
 ---
+
 #### 1. ✅ Prepare WSL Environment
-- Make sure we have **WSL2** installed and a Linux distribution (Ubuntu recommended).  
+- Ensure **WSL2** is installed with a Linux distribution (Ubuntu recommended).  
 - Update packages:
   ```bash
   sudo apt update && sudo apt upgrade -y
   ```
 
-#### 2. 🐳 Install Docker in WSL
-- Install Docker:
+#### 2. 🐳 Install Docker and Docker Compose in WSL
+- Install Docker and Docker Compose:
   ```bash
-  sudo apt install docker.io -y
+  sudo apt install docker.io docker-compose -y
   ```
 - Enable and start Docker service:
   ```bash
   sudo service docker start
   ```
-- Add Our user to the Docker group (so you do not need `sudo` every time):
+- Add the user to the Docker group (so `sudo` is not required every time):
   ```bash
   sudo usermod -aG docker $USER
   newgrp docker
   ```
 
-#### 3. 📂 Clone Your Repository
+#### 3. 📂 Clone Repository
 Inside WSL, run:
 ```bash
 git clone https://github.com/Neang-Chhong-Makara/Financial_Transactions_Fraud_Detection.git
 cd Financial_Transactions_Fraud_Detection
 ```
 
-#### 4. 🏗 Build Docker Image
-- If our repository has a `Dockerfile`, build the image:
-  ```bash
-  docker build -t financial_transactions_traud_detection_app .
-  ```
-- If we use **Docker Compose**, run:
+#### 4. 🏗 Run Docker Compose
+- Build and start containers in detached mode:
   ```bash
   docker-compose up --build -d
   ```
 
-#### 5. 🚀 Run the Container
-- Run the container and expose ports (e.g., 5000 for API):
+#### 5. 🚀 Verify Containers
+- Check running containers:
   ```bash
-  docker run -d -p 5000:5000 financial_transactions_traud_detection_app
+  docker ps
   ```
-- This maps container port `5000` to our local machine’s port `5000`.
+- View logs if needed:
+  ```bash
+  docker-compose logs -f
+  ```
+- This confirms the Streamlit, and MLflow services are running correctly.
 
 #### 6. 🌐 Access the Application
-- Open our browser or use `curl`:
-  ```bash
-  curl http://localhost:5000
-  ```
-- If the project exposes an API endpoint (e.g., `/predict`), we can send JSON transaction data for fraud detection.
-
-#### 7. 📊 Verify MLflow / Dashboard (Optional)
-- If MLflow tracking is included, expose its port (default `5000` or `5001`):
-  ```bash
-  docker run -d -p 5001:5001 financial_transactions_traud_detection_app
-  ```
-- Then access MLflow UI at `http://localhost:5001`.
+- Open a browser and access:
+  - Streamlit UI → `http://localhost:8501`  
+  - MLflow UI → `http://localhost:5001`  
 
 ---
 
 ### 🔑 Key Notes
-- **Consistency:** Docker ensures the same environment across dev and production.  
-- **Scalability:** We can later deploy this container to Kubernetes or the cloud.  
+- **Consistency:** Docker Compose ensures the same environment across development and production.  
+- **Scalability:** Containers can later be deployed to Kubernetes or cloud platforms.  
 - **Auditability:** MLflow and artifact logging inside Docker make fraud detection experiments reproducible.  
 
 ---
