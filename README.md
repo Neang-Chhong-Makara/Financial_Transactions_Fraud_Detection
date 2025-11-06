@@ -1,5 +1,7 @@
 ### 🛠 Step-by-Step Deployment Guide for Financial-Transactions-Fraud-Detection-Project on WSL
-We can deploy our *Financial_Transactions_Fraud_Detection* project on a local WSL (Windows Subsystem for Linux) machine by cloning the GitHub repository, building the Docker image, and running the container within WSL. The key steps are: **install Docker in WSL, clone the repo, build the image, and run the container with mapped ports for API access.**
+👉 We can deploy our *Financial_Transactions_Fraud_Detection* project on a local WSL (Windows Subsystem for Linux) machine by cloning the GitHub repository, building the Docker image, and running the container within WSL. The key steps are: **install Docker in WSL, clone the repo, build the image, and run the container with mapped ports for API access.**
+
+👉 Since our repository is already structured for Docker, the main effort is just **building and running the container inside local WSL**. 
 
 ---
 #### 1. ✅ Prepare WSL Environment
@@ -70,5 +72,3 @@ cd Financial_Transactions_Fraud_Detection
 - **Auditability:** MLflow and artifact logging inside Docker make fraud detection experiments reproducible.  
 
 ---
-
-👉 Since our repo is already structured for Docker, the main effort is just **building and running the container inside local WSL**.  
