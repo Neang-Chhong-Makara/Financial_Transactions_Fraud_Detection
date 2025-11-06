@@ -1,0 +1,112 @@
+sender_account,receiver_account,amount,transaction_type,merchant_category,location,device_used,is_fraud_original,spending_deviation_score,velocity_score,geo_anomaly_score,payment_channel
+ACC801491,ACC667573,11.82,transfer,entertainment,Dubai,mobile,TRUE,1,4,0.88,ACH
+ACC385202,ACC513607,451.48,payment,retail,Tokyo,pos,TRUE,-2.12,10,0.48,UPI
+ACC833801,ACC516650,47.73,transfer,grocery,Singapore,pos,FALSE,0.4,19,0.25,card
+ACC875695,ACC184501,811.06,payment,retail,Sydney,mobile,FALSE,-1.6,4,0.74,ACH
+ACC990933,ACC226632,117.57,withdrawal,grocery,Sydney,web,TRUE,0.45,19,0.17,ACH
+ACC574788,ACC793654,0.46,payment,entertainment,Toronto,mobile,TRUE,-0.31,20,0.03,ACH
+ACC311633,ACC183757,1013.08,deposit,retail,Tokyo,mobile,FALSE,0.84,18,0.41,ACH
+ACC815092,ACC414329,1155.16,deposit,retail,Berlin,atm,TRUE,1.37,5,0.9,wire_transfer
+ACC909631,ACC696325,45.96,transfer,restaurant,Tokyo,pos,FALSE,-0.93,6,0.29,ACH
+ACC156216,ACC587937,6.26,payment,grocery,Sydney,mobile,TRUE,1.69,12,0.68,card
+ACC200210,ACC266702,367.18,deposit,entertainment,New York,atm,TRUE,0.54,14,0.43,UPI
+ACC943293,ACC194324,8,payment,utilities,Dubai,web,FALSE,-0.87,1,0.34,card
+ACC258273,ACC229113,177.85,payment,online,Sydney,pos,TRUE,0.56,15,0.46,UPI
+ACC391349,ACC783063,94.69,payment,travel,New York,atm,FALSE,1.52,9,0.4,ACH
+ACC596439,ACC687431,120.71,withdrawal,retail,Berlin,mobile,FALSE,-0.41,7,0.51,ACH
+ACC806618,ACC990722,3.39,transfer,restaurant,Singapore,web,FALSE,-0.06,17,0.05,wire_transfer
+ACC579653,ACC533994,463.9,withdrawal,online,New York,pos,TRUE,1.07,13,0.38,card
+ACC983041,ACC421798,13.34,transfer,utilities,Berlin,mobile,TRUE,0.51,2,0.19,UPI
+ACC279823,ACC843593,85.22,payment,restaurant,Sydney,atm,FALSE,0.03,15,0.49,ACH
+ACC241392,ACC410870,413.46,withdrawal,online,Dubai,atm,FALSE,0.38,20,0.63,UPI
+ACC412642,ACC751254,7.92,transfer,entertainment,London,mobile,TRUE,1.77,7,0.77,wire_transfer
+ACC237834,ACC110696,14.49,transfer,entertainment,Tokyo,pos,FALSE,-0.08,1,0.68,card
+ACC405293,ACC951250,1241.3,deposit,utilities,New York,atm,FALSE,2.38,18,0.51,ACH
+ACC303576,ACC939399,14.44,payment,travel,Tokyo,mobile,FALSE,0.85,17,0.76,ACH
+ACC380550,ACC391898,12.26,transfer,online,Tokyo,pos,TRUE,0.24,18,0.42,card
+ACC120057,ACC512385,252.22,payment,online,Berlin,web,FALSE,0.32,12,0.48,wire_transfer
+ACC271093,ACC300248,3.99,transfer,grocery,New York,mobile,FALSE,-0.07,1,0.11,card
+ACC674679,ACC524192,480.85,withdrawal,grocery,Toronto,mobile,FALSE,-1.07,1,0.86,ACH
+ACC310252,ACC540899,22.04,transfer,retail,London,atm,FALSE,-0.82,20,0,card
+ACC694522,ACC393948,88.26,payment,online,Berlin,atm,TRUE,-0.8,15,0.25,card
+ACC715088,ACC135539,1013.81,deposit,retail,Singapore,mobile,FALSE,0.77,13,0.62,card
+ACC936561,ACC332849,246.42,withdrawal,travel,Sydney,pos,TRUE,0.95,6,0.28,ACH
+ACC136116,ACC877944,1740.3,deposit,travel,Dubai,atm,TRUE,-0.29,1,0.01,card
+ACC678591,ACC156004,81.24,payment,other,New York,atm,FALSE,0.04,4,0.99,ACH
+ACC409965,ACC623138,113.26,withdrawal,travel,New York,atm,TRUE,-0.04,1,0.27,card
+ACC102682,ACC757496,21.02,payment,other,Dubai,web,TRUE,0.65,19,0.19,ACH
+ACC728970,ACC980254,118.93,payment,travel,Tokyo,web,TRUE,0.92,9,0.17,wire_transfer
+ACC402757,ACC923319,371.75,withdrawal,other,Sydney,pos,TRUE,1.28,7,0.86,ACH
+ACC707421,ACC778351,2003.18,deposit,utilities,Sydney,pos,FALSE,1.44,3,0.2,card
+ACC516188,ACC714887,1784.93,deposit,online,Singapore,atm,TRUE,-0.14,19,0.58,UPI
+ACC102268,ACC767271,81.57,payment,travel,Sydney,pos,FALSE,0.36,14,0.3,wire_transfer
+ACC516185,ACC530572,87.63,deposit,restaurant,Berlin,web,TRUE,-0.23,13,0.35,ACH
+ACC269661,ACC272766,13.59,transfer,entertainment,Tokyo,mobile,TRUE,0.49,19,0.69,wire_transfer
+ACC332159,ACC695098,37.69,transfer,grocery,Toronto,mobile,TRUE,0.65,13,0.17,ACH
+ACC534132,ACC364080,149.43,withdrawal,other,Berlin,mobile,FALSE,0.18,12,0.07,card
+ACC671339,ACC141177,267.58,withdrawal,entertainment,Sydney,web,FALSE,-1.16,2,0.22,card
+ACC499329,ACC815465,128.05,withdrawal,grocery,Singapore,atm,TRUE,0.49,4,0.18,wire_transfer
+ACC753598,ACC250626,305.93,withdrawal,grocery,Toronto,mobile,FALSE,0.02,13,0.02,UPI
+ACC766598,ACC372283,47.99,transfer,grocery,Sydney,atm,FALSE,0.27,3,0.98,ACH
+ACC273511,ACC219291,575.53,deposit,utilities,Toronto,atm,FALSE,0.28,16,0.47,ACH
+ACC925847,ACC534324,77.76,payment,online,Dubai,web,FALSE,1.39,3,0.63,UPI
+ACC451910,ACC640192,1.14,payment,entertainment,Tokyo,atm,FALSE,-0.28,17,0.46,ACH
+ACC657438,ACC976027,40.1,transfer,utilities,Berlin,mobile,FALSE,-0.25,4,0.33,card
+ACC450777,ACC127372,186.14,payment,entertainment,Berlin,atm,TRUE,0.37,14,0.65,card
+ACC105008,ACC227280,20.4,transfer,entertainment,Singapore,web,TRUE,1.39,11,0.08,wire_transfer
+ACC983668,ACC243406,9.44,transfer,utilities,Sydney,atm,TRUE,0.26,11,0.91,wire_transfer
+ACC940031,ACC951177,248.57,deposit,grocery,Singapore,pos,FALSE,-1.78,20,0.88,UPI
+ACC916242,ACC529858,822.53,deposit,online,Singapore,pos,TRUE,-1.15,2,0.89,UPI
+ACC940558,ACC442264,629.52,withdrawal,restaurant,London,atm,FALSE,0.44,3,0.38,card
+ACC708161,ACC419243,344.67,payment,restaurant,London,mobile,TRUE,-0.71,15,0.59,UPI
+ACC184415,ACC188534,21.69,transfer,entertainment,Berlin,atm,FALSE,-0.2,12,0.96,UPI
+ACC450088,ACC664588,125.85,withdrawal,retail,Singapore,mobile,TRUE,-0.53,20,0.47,wire_transfer
+ACC135635,ACC884590,18.8,payment,entertainment,Tokyo,mobile,TRUE,-0.01,15,0.69,ACH
+ACC250355,ACC163484,0.01,withdrawal,travel,Singapore,pos,FALSE,0.14,4,0.37,wire_transfer
+ACC582426,ACC489622,377.2,withdrawal,online,London,pos,TRUE,0.55,20,0.7,UPI
+ACC802331,ACC879788,100.06,payment,travel,Toronto,pos,FALSE,0.4,5,0.36,ACH
+ACC836398,ACC709687,39.93,payment,travel,Dubai,mobile,TRUE,0.23,9,0.27,ACH
+ACC959220,ACC767557,9.01,payment,utilities,New York,atm,TRUE,-0.57,11,0.58,ACH
+ACC369228,ACC329015,448.1,withdrawal,other,Berlin,mobile,TRUE,0.85,10,0.64,UPI
+ACC829078,ACC265557,670.15,deposit,entertainment,Singapore,atm,TRUE,-1.17,8,0.28,UPI
+ACC405700,ACC568033,189.79,withdrawal,entertainment,Sydney,atm,FALSE,1.76,2,0.49,ACH
+ACC383959,ACC566599,27.37,transfer,retail,Sydney,mobile,TRUE,-0.96,3,0.99,ACH
+ACC835097,ACC369171,256.12,withdrawal,restaurant,Sydney,atm,FALSE,-1.28,12,0.99,wire_transfer
+ACC494783,ACC482607,24.77,transfer,grocery,London,pos,TRUE,-0.66,19,0.63,ACH
+ACC248269,ACC690761,3.81,transfer,other,Singapore,web,FALSE,1.08,20,0.67,card
+ACC978380,ACC180714,15.83,payment,grocery,Tokyo,pos,FALSE,1.24,6,0.74,ACH
+ACC650761,ACC688541,227.21,withdrawal,other,New York,web,TRUE,0.28,4,0.65,UPI
+ACC480848,ACC747397,19.06,transfer,other,Dubai,pos,FALSE,0.64,6,0.61,ACH
+ACC285130,ACC629110,1476.96,deposit,entertainment,London,web,TRUE,-1.09,10,0.63,UPI
+ACC927568,ACC618400,1418.32,deposit,utilities,Sydney,mobile,TRUE,-1.37,19,0.82,card
+ACC849002,ACC151970,10.29,transfer,other,Dubai,mobile,TRUE,0.12,18,0.98,card
+ACC292321,ACC739283,9.37,transfer,entertainment,Sydney,atm,TRUE,-0.28,12,0.12,card
+ACC385528,ACC750238,24.41,transfer,grocery,Singapore,mobile,FALSE,-0.14,1,0.23,card
+ACC279744,ACC229982,1784.41,deposit,other,Berlin,mobile,TRUE,0.13,19,0.65,card
+ACC431399,ACC814073,307.39,deposit,travel,New York,atm,FALSE,-0.88,3,0.72,wire_transfer
+ACC987059,ACC368772,0.35,payment,entertainment,Sydney,web,FALSE,-0.94,19,0.36,ACH
+ACC370193,ACC281528,129.12,payment,online,Tokyo,pos,FALSE,-0.46,20,0.46,card
+ACC916105,ACC524089,143.24,withdrawal,entertainment,Berlin,web,TRUE,-0.83,5,0.27,ACH
+ACC217683,ACC243161,157.46,withdrawal,entertainment,Berlin,atm,FALSE,-1.58,14,0.73,card
+ACC317030,ACC984860,691.07,deposit,other,Toronto,mobile,FALSE,-0.73,20,0.98,wire_transfer
+ACC367326,ACC569655,754.37,withdrawal,grocery,Sydney,mobile,FALSE,0.37,17,0.77,UPI
+ACC724837,ACC112422,19.18,transfer,grocery,Tokyo,pos,FALSE,-0.05,10,0.76,card
+ACC788597,ACC240453,175.49,withdrawal,restaurant,Singapore,atm,FALSE,0.73,17,0.36,UPI
+ACC744602,ACC865441,146.47,deposit,online,London,mobile,TRUE,-0.29,16,0.76,wire_transfer
+ACC307272,ACC222547,47.75,payment,other,Dubai,atm,TRUE,0.92,8,0.01,wire_transfer
+ACC713582,ACC443514,70.56,payment,travel,Singapore,mobile,FALSE,0.31,17,0.82,UPI
+ACC186069,ACC997678,1881.66,deposit,entertainment,Toronto,web,TRUE,0.14,3,0.72,ACH
+ACC397142,ACC750088,29.21,transfer,online,London,mobile,TRUE,0.28,11,0.4,ACH
+ACC297618,ACC961412,19.83,transfer,online,Dubai,pos,FALSE,-1.49,19,0.1,wire_transfer
+ACC701989,ACC880988,6.35,transfer,online,New York,atm,FALSE,-0.16,7,0.69,UPI
+ACC118746,ACC160805,22.58,transfer,restaurant,Dubai,web,FALSE,-0.27,1,0.69,card
+ACC664561,ACC229851,967.8,deposit,other,Berlin,pos,FALSE,-1.48,2,0.59,wire_transfer
+ACC820342,ACC864116,445.36,withdrawal,grocery,Tokyo,atm,TRUE,-0.21,12,0.12,wire_transfer
+ACC825810,ACC478149,521.02,withdrawal,entertainment,Dubai,web,TRUE,0.44,13,0.84,wire_transfer
+ACC582089,ACC235423,13.86,transfer,travel,Sydney,atm,FALSE,0.18,17,0.97,UPI
+ACC682058,ACC522168,59.36,payment,retail,Berlin,pos,FALSE,2.2,17,0.52,card
+ACC238463,ACC979265,118.38,withdrawal,restaurant,Berlin,atm,FALSE,-0.18,11,0.81,wire_transfer
+ACC366343,ACC389154,577.76,withdrawal,travel,London,web,TRUE,0.44,12,0.65,card
+ACC404970,ACC895796,1309.07,deposit,restaurant,Sydney,pos,FALSE,-0.78,12,0.78,wire_transfer
+ACC656452,ACC136633,20.56,transfer,retail,Tokyo,mobile,FALSE,-0.7,3,0.01,wire_transfer
+ACC345502,ACC841272,1429.43,deposit,entertainment,Sydney,pos,TRUE,-0.95,2,0.38,ACH

@@ -1,0 +1,46 @@
+services:
+  # ----------------- MLflow Server -----------------
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow_server_cont
+    command: >
+      mlflow server
+        --backend-store-uri sqlite:///mlflow_local/mlflow.db
+        --default-artifact-root file:///mlflow/artifacts
+        --host 0.0.0.0
+        --port 5000
+        --allowed-hosts '*'
+        --cors-allowed-origins '*'
+    # SQLite DB for experiments (host folder)
+    # Storage for models/artifacts (host folder)
+    # Accept connections from any container/host
+    # Allow all hosts for local development (Custom allow API requests from Streamlit and local machine ...)
+    # Allow cross-origin requests from all origins
+    volumes:
+      - ./mlflow_local:/mlflow_local          # SQLite DB storage on host
+      - ./mlflow_artifacts:/mlflow/artifacts  # Artifacts storage on host
+    ports:
+      - "5000:5000"                            # Map MLflow port
+    environment:
+      - MLFLOW_ARTIFACT_ROOT=/mlflow/artifacts # Ensure MLflow can write to artifact folder
+    restart: always
+
+  # ----------------- Streamlit App -----------------
+  streamlit-app:
+    container_name: financial_fraud_detection_cont
+    build:
+      context: .                             # Dockerfile context
+      dockerfile: Dockerfile                 # Dockerfile to build app image
+    image: financial_fraud_detection_image:latest
+    ports:
+      - "8501:8501"                          # Streamlit default port
+    volumes:
+      - .:/app                                # Mount app folder for live edits
+      - ./mlflow_artifacts:/mlflow/artifacts  # same as MLflow server, Mount MLflow artifacts folder
+    environment:
+      - PYTHONUNBUFFERED=1                    # Force Python output flush
+      - MLFLOW_TRACKING_URI=http://mlflow:5000  # Streamlit → MLflow connection
+      - MLFLOW_ARTIFACT_ROOT=/mlflow/artifacts  # Match MLflow server root
+    depends_on:
+      - mlflow                                # Ensure MLflow starts before Streamlit
+    restart: always
