@@ -27,11 +27,18 @@
   newgrp docker
   ```
 
-#### 3. 📂 Clone Repository
-Inside WSL, run:
+#### 3. 📂 Clone Repository & Pull LFS Files Inside Local WSL, run:
+- Ensure Git and Git LFS are installed:
+```bash
+sudo apt update
+sudo apt install git-lfs -y
+git lfs install
+```
+- Clone the repository and pull large files:
 ```bash
 git clone https://github.com/Neang-Chhong-Makara/Financial_Transactions_Fraud_Detection.git
 cd Financial_Transactions_Fraud_Detection
+git lfs pull
 ```
 
 #### 4. 🏗 Run Docker Compose
