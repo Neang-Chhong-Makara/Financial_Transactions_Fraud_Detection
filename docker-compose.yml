@@ -9,13 +9,9 @@ services:
         --default-artifact-root file:///mlflow/artifacts
         --host 0.0.0.0
         --port 5000
-        --allowed-hosts '*'
-        --cors-allowed-origins '*'
     # SQLite DB for experiments (host folder)
     # Storage for models/artifacts (host folder)
     # Accept connections from any container/host
-    # Allow all hosts for local development (Custom allow API requests from Streamlit and local machine ...)
-    # Allow cross-origin requests from all origins
     volumes:
       - ./mlflow_local:/mlflow_local          # SQLite DB storage on host
       - ./mlflow_artifacts:/mlflow/artifacts  # Artifacts storage on host
@@ -23,6 +19,8 @@ services:
       - "5000:5000"                            # Map MLflow port
     environment:
       - MLFLOW_ARTIFACT_ROOT=/mlflow/artifacts # Ensure MLflow can write to artifact folder
+      - MLFLOW_ENABLE_CORS=true
+      - MLFLOW_CORS_ORIGINS=*                  # Allow cross-origin requests from all origins
     restart: always
 
   # ----------------- Streamlit App -----------------
