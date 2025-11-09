@@ -61,7 +61,7 @@ git lfs pull
 #### 6. 🌐 Access the Application
 - Open a browser and access:
   - Streamlit UI → `http://localhost:8501`  
-  - MLflow UI → `http://localhost:5001`  
+  - MLflow UI → `http://localhost:5000`  
 
 ### 🔑 Key Notes
 - **Consistency:** Docker Compose ensures the same environment across development and production.  
