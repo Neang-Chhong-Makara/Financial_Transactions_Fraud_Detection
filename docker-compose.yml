@@ -9,7 +9,7 @@ services:
         --default-artifact-root file:///mlflow/artifacts
         --host 0.0.0.0
         --port 5000
-        --allowed-hosts mlflow,mlflow:5000,localhost,127.0.0.1
+        --allowed-hosts mlflow,mlflow:5000,localhost,127.0.0.1,localhost:5000
         --cors-allowed-origins http://localhost,http://127.0.0.1,http://mlflow:5000
     # SQLite DB for experiments (host folder)
     # Storage for models/artifacts (host folder)
